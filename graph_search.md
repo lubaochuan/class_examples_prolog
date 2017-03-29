@@ -1,3 +1,5 @@
+Searching a directed graph.
+![GitHub Logo](/images/graph_search.png)
 ```mermaid
 graph LR
   e --> f
@@ -12,3 +14,5 @@ graph LR
   e --> d
   h --> f
 ```
+
+[algorithm source](https://www.cse.unsw.edu.au/~billw/cs9414/notes/prolog/path-trace.html) 
