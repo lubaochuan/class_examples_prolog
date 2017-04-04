@@ -1,3 +1,7 @@
+% sources:
+% http://www.learnprolognow.org/lpnpage.php?pagetype=html&pageid=lpn-htmlse13
+% http://www.cse.unsw.edu.au/~billw/cs9414/notes/prolog/intro.html
+
 member(X, [X|_]).
 % same as member(X, [Y|_]):- X = Y.
 
@@ -16,6 +20,11 @@ total_cost([Item|Rest], Cost):-
   Cost is ItemCost + CostOfRest.
 
 /** <examples> Your example queries go here, e.g.
+?- [Head|Tail] = [mia,vincent,jules,yolanda].
+?- [X|Y] = [].
+?- [X|Y] = [[],dead(z),[2,[b,c]],[],Z].
+?- [X,Y|W] = [[],dead(z),[2,[b,c]],[],Z].
+?- [_,X,_,Y|_] = [[],dead(z),[2,[b,c]],[],Z].
 ?- X = [1 | [2, 3]].
 ?- Head = 1 , Tail = [2, 3], List = [Head | Tail].
 ?- [X, Y, Z] = [1, 2, 3].
@@ -26,4 +35,3 @@ total_cost([Item|Rest], Cost):-
 ?- member(e, [a,b,c,d]).
 ?- total_cost([cornflakes, crisps], X).
 */
-%source: http://www.cse.unsw.edu.au/~billw/cs9414/notes/prolog/intro.html
