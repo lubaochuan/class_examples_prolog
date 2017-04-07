@@ -15,4 +15,7 @@ graph LR
   h --> f
 ```
 
-[algorithm source](https://www.cse.unsw.edu.au/~billw/cs9414/notes/prolog/path-trace.html) 
+# Test Path
+Implement ```cango(X,Y)```to test whether there is a path from ```X``` to ```Y```.
+[solution](can_go.pl)
+[algorithm source](https://www.cse.unsw.edu.au/~billw/cs9414/notes/prolog/path-trace.html)

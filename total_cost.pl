@@ -2,11 +2,12 @@
 % http://www.learnprolognow.org/lpnpage.php?pagetype=html&pageid=lpn-htmlse13
 % http://www.cse.unsw.edu.au/~billw/cs9414/notes/prolog/intro.html
 
-member(X, [X|_]).
-% same as member(X, [Y|_]):- X = Y.
+% my_member(X, [X|_]).
+my_member(X, [Y|_]):-
+  X = Y.
 
-member(X, [_|Y]):-
-  member(X, Y).
+my_member(X, [_|Y]):-
+  my_member(X, Y).
 
 cost(cornflakes, 230).
 cost(cocacola, 210).
@@ -31,7 +32,7 @@ total_cost([Item|Rest], Cost):-
 ?- [X | Y] = [1, 2, 3].
 ?- [X | Y] = [1].
 ?- [X, Y | Z] = [fred, jim, jill, mary].
-?- member(a, [a,b,c,d]).
-?- member(e, [a,b,c,d]).
+?- my_member(a, [a,b,c,d]).
+?- my_member(e, [a,b,c,d]).
 ?- total_cost([cornflakes, crisps], X).
 */
