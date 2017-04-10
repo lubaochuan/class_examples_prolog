@@ -12,7 +12,7 @@ Suppose we are given a knowledge base with the following facts:
    tran(acht,eight).
    tran(neun,nine).
 ```
-Write a predicate ```listtran(G,E)``` which translates a list of German number words to the corresponding list of English number words. For example:
+Write a predicate `listtran(G,E)` which translates a list of German number words to the corresponding list of English number words. For example:
 ```
    listtran([eins,neun,zwei],X).
 ```
