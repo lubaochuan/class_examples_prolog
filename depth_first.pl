@@ -1,3 +1,4 @@
+% http://www.swi-prolog.org/pldoc/man?predicate=select/3
 move(Stacks, NewStacks):-
   select([Top|Stack1], Stacks, Rest),
   select(Stack2, Rest, OtherStacks),
